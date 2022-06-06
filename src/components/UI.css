@@ -1,0 +1,15 @@
+.Card {
+    margin-bottom: 20px;
+    padding: 1em;
+  }
+  .CardContent {
+    padding: 5px;
+    border: solid gray 1px;
+    border-radius: 6px;
+    margin: 5px;
+    
+   
+  }
+  .CardActions{
+    padding: 16;
+  }
