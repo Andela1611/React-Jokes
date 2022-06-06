@@ -25,6 +25,10 @@ const Favorites = (props) => {
 
     localStorage.setItem("favorites", JSON.stringify(deleted));
   };
+  const handleDeleteAll = () => {
+    localStorage.removeItem("favorites");
+    window.location.reload(false);
+  };
   return (
     <div>
       <Card className="Card">
@@ -37,6 +41,13 @@ const Favorites = (props) => {
             ? ` ${storedJokes.length} saved jokes!`
             : null}
         </div>
+        <Button
+          variant="outlined"
+          startIcon={<DeleteIcon />}
+          onClick={() => handleDeleteAll()}
+        >
+          Delete all
+        </Button>
         {storedJokes.map((joke) => (
           <React.Fragment key={joke.id}>
             <div className="CardContent row">
