@@ -7,17 +7,22 @@ const Navbar = (props) => {
   return (
     <div className={classes}>
       <CssBaseline />
-      <Container className="navbar">
-        <Typography variant="h2" align="center">
-          Chuck Norris jokes
-        </Typography>
-        <Link className="nav-link navbar-item" to={"/"}>
-          Home
-        </Link>
-        <Link className="nav-link" to={"/favorites"}>
-          Favorites
-        </Link>
-      </Container>
+      <div className="navbar">
+        <div>
+          <img src="https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_960_720.png" />
+          <ul>
+            <li>
+              <Link className="" to={"/"}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to={"/favorites"}>Favorites</Link>
+            </li>
+          </ul>
+          <img src="https://cdn.pixabay.com/photo/2013/07/13/13/34/man-161135_960_720.png" />
+        </div>
+      </div>
     </div>
   );
 };

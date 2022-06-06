@@ -1,0 +1,11 @@
+.joke-count{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5em;
+}
+
+.badge{
+    font-weight: 500;
+    font-size: 1.5em;
+
+}

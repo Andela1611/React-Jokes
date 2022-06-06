@@ -1,7 +1,64 @@
-.navbar-item{
-    margin: 2em;
-}
-.navbar{
-    margin-bottom: 6px;
-    background-color: rgb(99, 178, 214);
-}
+
+body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .logo {
+    float: left;
+  }
+  /* ~~ Top Navigation Bar ~~ */
+  
+  #navigation-container {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+  }
+  
+  .navbar {
+    background-color: #352d2f;
+    height: 70px;
+    width: 100%;
+    text-align:center;
+  }
+  .navbar img{
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-top: 5px;
+  max-width: 2.5em;
+    max-height: 4em;
+  }
+  .navbar ul {
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    display:inline-block;
+    vertical-align:top;
+  }
+  
+  .navbar li {
+    list-style-type: none;
+    padding: 0px;
+    height: 24px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    display: inline;
+  }
+  
+  .navbar a {
+      color: white;
+      font-weight: 500;
+  }
+  .navbar li a {
+    
+    font-size: 20px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    line-height: 70px;
+    padding: 5px 15px;
+    opacity: 0.7;
+  }
+  
+  #menu {
+    float: right;
+  }

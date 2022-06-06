@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./UI.css";
+import "./Favorites.css";
 import {
   Button,
   Card,
@@ -32,30 +33,30 @@ const Favorites = (props) => {
   return (
     <div>
       <Card className="Card">
-        <div className="badge">
-          {!storedJokes.length
-            ? " No jokes saved!"
-            : storedJokes.length === 1
-            ? " 1 saved joke!"
-            : storedJokes.length > 1
-            ? ` ${storedJokes.length} saved jokes!`
-            : null}
+        <div className="joke-count">
+          <div className="badge">
+            {!storedJokes.length
+              ? " No jokes saved!"
+              : storedJokes.length === 1
+              ? " 1 saved joke!"
+              : storedJokes.length > 1
+              ? ` ${storedJokes.length} saved jokes!`
+              : null}
+          </div>
+          <Button
+            variant="outlined"
+            startIcon={<DeleteIcon />}
+            onClick={() => handleDeleteAll()}
+          >
+            Delete all
+          </Button>
         </div>
-        <Button
-          variant="outlined"
-          startIcon={<DeleteIcon />}
-          onClick={() => handleDeleteAll()}
-        >
-          Delete all
-        </Button>
+
         {storedJokes.map((joke) => (
           <React.Fragment key={joke.id}>
-            <div className="CardContent row">
+            <div className="CardContentInline row">
               <div className="col-10 ">
-                <span
-                  className="form-control bg-white btn mt-2"
-                  style={{ textAlign: "left", fontWeight: "bold" }}
-                >
+                <span className="form-control bg-white btn mt-2">
                   {joke.joke}
                 </span>
               </div>

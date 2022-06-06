@@ -51,10 +51,10 @@ const Home = (props) => {
   return (
     <div>
       <Card className="Card">
-        <CardContent className="CardContent">
-          <Typography>{joke}</Typography>
-        </CardContent>
-        <CardActions className="CardActions">
+        <div className="CardContent">
+          <p>{joke}</p>
+        </div>
+        <div className="CardActions">
           <Button
             variant="contained"
             color="success"
@@ -65,7 +65,7 @@ const Home = (props) => {
           <Button variant="contained" color="secondary" onClick={getJoke}>
             Get new joke...
           </Button>
-        </CardActions>
+        </div>
       </Card>
     </div>
   );
