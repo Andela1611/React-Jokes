@@ -1,15 +1,37 @@
 .Card {
-    margin-bottom: 20px;
+    margin: 20px;
     padding: 1em;
+    
+    
   }
   .CardContent {
    
-    border: solid gray 1px;
+    
+    border: solid white 1px;
     border-radius: 6px;
+    background-color: white;
+     opacity: 0.7;
     margin: 5px;
     padding: 16px;
-    font-size: 1.3em;
+    font-size: 1.4em;
+    font-weight: 550;
     text-align: center;
+    color: #440006;
+    font-family: "Times New Roman", Times, serif;
+   
+  }
+  button{
+    color: white;
+    background-color: #00BFBA;
+    font-size: 1.1em;
+    padding: 10px 26px;
+    border-radius: 6px;
+    border: solid #00BFBA 1px ;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+   
+  
+       
+
   }
   
   .CardActions{
@@ -17,6 +39,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   .CardActions button {
@@ -25,12 +48,17 @@
   .CardContentInline{
     display: flex;
     justify-content: space-between;
-    border: solid gray 1px;
+    border: solid white 1px;
     border-radius: 6px;
     margin: 5px;
     padding: 16px;
-    font-size: 1.2em;
+    font-size: 1.3em;
+    font-family: "Times New Roman", Times, serif;
     align-items: center;
+    color: #440006;
+    background-color: white;
+    opacity: 0.7;
+    
 
 
   }

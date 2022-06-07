@@ -50,23 +50,17 @@ const Home = (props) => {
   };
   return (
     <div>
-      <Card className="Card">
+      <div className="Card">
         <div className="CardContent">
           <p>{joke}</p>
         </div>
         <div className="CardActions">
-          <Button
-            variant="contained"
-            color="success"
-            onClick={() => saveJoke(id, joke)}
-          >
-            {save}
-          </Button>
-          <Button variant="contained" color="secondary" onClick={getJoke}>
-            Get new joke...
-          </Button>
+          <button onClick={() => saveJoke(id, joke)}>{save}</button>
+          <button variant="contained" color="secondary" onClick={getJoke}>
+            NEXT JOKE
+          </button>
         </div>
-      </Card>
+      </div>
     </div>
   );
 };

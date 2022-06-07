@@ -15,6 +15,7 @@ const Navbar = (props) => {
               <Link className="" to={"/"}>
                 Home
               </Link>
+              |
             </li>
             <li>
               <Link to={"/favorites"}>Favorites</Link>

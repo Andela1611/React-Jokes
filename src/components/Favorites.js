@@ -32,15 +32,15 @@ const Favorites = (props) => {
   };
   return (
     <div>
-      <Card className="Card">
+      <div className="Card">
         <div className="joke-count">
           <div className="badge">
             {!storedJokes.length
-              ? " No jokes saved!"
+              ? " No saved jokes yet!"
               : storedJokes.length === 1
-              ? " 1 saved joke!"
+              ? " You have 1 saved joke!"
               : storedJokes.length > 1
-              ? ` ${storedJokes.length} saved jokes!`
+              ? `You have  ${storedJokes.length} saved jokes!`
               : null}
           </div>
           <Button
@@ -72,7 +72,7 @@ const Favorites = (props) => {
             </div>
           </React.Fragment>
         ))}
-      </Card>
+      </div>
     </div>
   );
 };
